@@ -5,7 +5,7 @@ import Search from './components/WASearch.vue'
 </script>
 
 <template>
-  <div class="bg-gradient-to-r h-screen from-[#014872] to-[#A0EACF] text-center">
+  <div class="h-screen bg-[#206975]  text-center">
     <div class="flex justify-center pt-5">
       <Header />
     </div>
@@ -16,4 +16,12 @@ import Search from './components/WASearch.vue'
 
 
 <style>
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: orange; 
+  border-radius: 20px;
+}
+
 </style>

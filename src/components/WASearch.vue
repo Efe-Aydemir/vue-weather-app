@@ -1,28 +1,24 @@
 <script setup>
-
+import { onMounted} from 'vue';
+onMounted(() => {
+    const ctinput = document.getElementById('cityİnput')
+    ctinput.focus()
+})
 </script>
 
 
 <template>
+    <div class="flex justify-center mt-12">
+        <div class="flex flex-col justify-center items-center">
 
-<div class="flex justify-center flex-col mt-12">
-    <div id="CountryLabel" class="mb-6">
-        <h1 class="font-bold text-4xl text-gray-800">Country</h1>
-    </div>
-    <div id="EntryC" class="flex flex-col justify-center items-center">
-        <input type="text" name="country" id="country_input" class="p-1 w-72 rounded-md text-center text-xl" required placeholder="Country">
-    </div>
-    
-    <div id="CityLabel" class="mb-6 mt-12">
-        <h1 class="font-bold text-4xl text-gray-800">City</h1>
-    </div>
-    <div id="EntryCt" class="flex flex-col justify-center items-center">
-        <input type="text" name="city" id="city_input" class="p-1 w-72 rounded-md text-center text-xl" required placeholder="City">
-    </div>
-    <div class="flex justify-center">
-    <button class="transition-all duration-500 mt-12 p-3 w-36 bg-gradient-to-r to-blue-400 from-slate-300 rounded-full text-xl font-bold hover:to-black 
-    hover:from-black hover:text-white">Weather</button>
-    </div>
-</div>
+            <div class="entyrs flex flex-col ">
 
+                <div id="cityDiv" class="flex items-center flex-col">
+                    <label for="cityİnput" class="w-12 text-white text-xl">City</label>
+                    <input id="cityİnput" class="rounded-md p-2 w-44 m-3 outline-none" type="text" required>
+                </div>
+            </div>
+            <button class="transition-all duration-500 p-2 w-44 mt-6 border-none rounded-lg text-xl text-black shadow-md shadow-black bg-compbg hover:shadow-lg hover:bg-main hover:text-white hover:border hover:border-solid hover:border-black">Search</button>
+        </div>
+    </div>
 </template>
