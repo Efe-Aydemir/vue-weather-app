@@ -5,12 +5,13 @@ import Search from './components/WASearch.vue'
 </script>
 
 <template>
-  <div class="h-screen bg-[#206975]  text-center">
+  <div class="h-screen  bg-[#BEE9E8] text-center" id="app">
     <div class="flex justify-center pt-5">
       <Header />
     </div>
     <Search />
     <Footer />
+    
 </div>
 </template>
 
@@ -23,5 +24,4 @@ import Search from './components/WASearch.vue'
   background: orange; 
   border-radius: 20px;
 }
-
 </style>
