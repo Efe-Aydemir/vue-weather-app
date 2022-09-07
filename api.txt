@@ -1,1 +1,0 @@
-http://api.weatherapi.com/v1/current.json?key=85d9e978aad94bb79b3145441221008&q=Berlin&aqi=no
