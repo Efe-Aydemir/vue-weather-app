@@ -5,7 +5,7 @@ import Search from './components/WASearch.vue'
 </script>
 
 <template>
-  <div class="h-screen  bg-[#BEE9E8] text-center" id="app">
+  <div class="h-screen   text-center" id="app">
     <div class="flex justify-center pt-5">
       <Header />
     </div>
